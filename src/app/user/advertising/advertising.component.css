@@ -1,0 +1,155 @@
+.main-dropDownBottom{
+    position: relative;
+}
+
+
+.dropDownBottom{
+    position: relative;
+    width: 400px;
+    height: 40px;
+    background-color: red;
+    margin-bottom: 20px;
+    transition: ease-in-out 2s;
+    /* z-index: 1; */
+}
+
+.dropDownBottom1{
+    height: 400px;
+    transform: rotateY('angle');
+    transition: ease-in-out 2s;
+    background-image: url('src/assets/81Gok22YbYL._AC_UL1500_.jpg');
+    background-size: cover;
+}
+
+.hover1{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+    transition: ease-in-out 2s;
+    background-image: url('src/assets/81Gok22YbYL._AC_UL1500_.jpg');
+    background-size: cover;
+    /* z-index: 2; */
+}
+
+/* .hover1:hover{
+    height: 400px;
+    transform: rotateY('angle');
+    transition: ease-in-out 2s;
+    background-image: url('src/assets/81Gok22YbYL._AC_UL1500_.jpg');
+    background-size: cover;
+} */
+
+/* _______________________________________________________________________________________ */
+
+.mainBlock{
+    position: relative;
+    margin: 100px auto;
+}
+
+
+.block { /* Внешний блок */
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px #123;
+    margin-left: 15px;
+    width: 48%;
+   
+  }
+  
+  .icon-block { /* блок с картинкой и скрытым описанием */
+    position: relative;
+    line-height: 0; /* чтобы не было пробела под картинкой */
+  }
+  
+  .icon-block * {
+    line-height: normal;
+  }
+  
+  .name { /* название картинки */
+    text-align: center;
+    font-size: 18px;
+    padding: 10px 0;
+    transition: 0.3s linear;
+  }
+  
+  .hidden { /* Скрытое описание */
+    width: 100%;
+    height: 100px; /* за счет этого */
+    overflow: hidden; /* и этого */
+    transition: 0.3s linear;
+    position: absolute;
+    top: -100px; /* прилипнет вверху */
+    background-color: #b59984;
+    /* background-image: url('/assets/FG164-water-fertilizers-main-700x531-700x531.jpg'); */
+    background-size: contain ;
+    color: white;
+    font-size: 30px;
+    box-sizing: border-box; /* не будет сюрпризов от padding */
+    padding: 0 5px;
+  }
+
+  .hidden1 { /* Скрытое описание */
+    width: 100%;
+    height: 700px; /* за счет этого */
+    overflow: hidden; /* и этого */
+    transition: 0.3s linear;
+    position: absolute;
+    top: -100px; /* прилипнет вверху */
+    background-color: #b59984;
+    /* background-image: url('/assets/FG164-water-fertilizers-main-700x531-700x531.jpg'); */
+    background-size: contain ;
+    color: white;
+    font-size: 30px;
+    box-sizing: border-box; /* не будет сюрпризов от padding */
+    padding: 0 5px;
+  }
+  
+  /* .block:hover .hidden {
+    height: 117%;
+    padding: 5px;
+  } */
+  
+  .block:hover .name {
+    color: red;
+  }
+
+  .iconSantaClause{
+    width: 100%;
+    height: 600px;
+  }
+
+
+  .pinusCembra{
+    width: 100%;
+    height: 700px;
+  }
+/* ________________________________________________________________________________ */
+
+.gogo-main{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.gogo{
+    position: absolute;
+    right: -620px;
+    width: 200px;
+    height: 200px;
+    transition: all 0.9s ease-out;
+    border-radius: 50%;
+}
+.gogo-main:hover .gogo{
+    right: 0;
+    transition: all 0.9s ease-out;
+}
+
+p {
+  font-family: Lato;
+}
+

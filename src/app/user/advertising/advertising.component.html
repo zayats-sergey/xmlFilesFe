@@ -1,0 +1,49 @@
+<p>advertising works!</p>
+
+
+
+<div class="mainBlock">
+    <div class="block">
+        <div class="icon-block">
+          <!-- <img class="iconSantaClause" src="\assets\filifera_aurea_nana1-900x900.jpg"> -->
+          <lib-ngx-image-zoom class="iconSantaClause"
+            [thumbImage]="myThumbnail"
+            [fullImage]="myFullresImage"
+            [magnification]="3"
+            [enableScrollZoom]="true"
+            [enableLens]="true"
+            [lensWidth]="200"
+            [lensHeight]="200"
+            [circularLens]="true"
+            [scrollStepSize] = "0.1"
+            ></lib-ngx-image-zoom >
+          <div class="hidden" [ngClass] = "positionOn" (click) = "showAdvertising1()">SUBSCRIBE</div>
+        </div>
+        <div class="name">ADVERTISING</div>
+    </div>
+    
+    <div class="block">
+        <div class="icon-block">
+          <img class="iconSantaClause" src="\assets\pinus_cembra2-900x900.jpg">
+          <div class="hidden" [ngClass] = "positionOn2" (click) = "showAdvertising2()">SUBSCRIBE</div>
+        </div>
+        <div class="name">ADVERTISING</div>
+    </div>
+</div>
+
+
+<div class="gogo-main">
+    <img class="gogo" src="\assets\how-to-put-lights-on-a-christmas-tree-guide-steps-2000-c946a50fa4b44498a8ad77fd201689cf.jpg" alt="">
+</div>
+
+
+<!-- <lib-ngx-image-zoom 
+  [thumbImage]="myThumbnail"
+  [fullImage]="myFullresImage"
+  [magnification]="3"
+  [enableScrollZoom]="true"
+  [enableLens]="true"
+  [lensWidth]="300"
+  [scrollStepSize] = "0.1"
+></lib-ngx-image-zoom > -->
+

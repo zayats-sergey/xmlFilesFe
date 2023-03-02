@@ -1,0 +1,88 @@
+import { Product, ProductTypeCode } from "../models/product.model";
+
+export const PRODUCT : Product[] = [
+    {
+        nameProduct: 'metasecvia',
+        positionAmount: 10,
+        sumPrice: 50,
+        priceOne: 5,
+        images: '/assets/матасеквоя-1.jpg',
+        numberItem: 1,
+        isSelected: false,
+    },
+    {
+        nameProduct: 'smaragd',
+        positionAmount: 20,
+        sumPrice: 400,
+        priceOne:20,
+        images: '/assets/туя-смарагд-2.jpg',
+        numberItem: 1,
+        isSelected: false,
+    },
+    {
+        nameProduct: 'filifera-aurea-nana',
+        positionAmount: 20,
+        sumPrice: 400,
+        priceOne:20,
+        images: '/assets/filifera_aurea_nana1-900x900.jpg',
+        numberItem: 1,
+        isSelected: false,
+    },
+    {
+        nameProduct: 'kiparisovic-lavsona',
+        positionAmount: 20,
+        sumPrice: 400,
+        priceOne:20,
+        images: '/assets/kiparisovik-lavsona-ivonne.jpg',
+        numberItem: 1,
+        isSelected: false,
+    },
+    {
+        nameProduct: 'kaibab',
+        positionAmount: 20,
+        sumPrice: 400,
+        priceOne:20,
+        images: '/assets/Picea-pungens-Kaibab.jpg',
+        numberItem: 1,
+        isSelected: false,
+    },
+    {
+        nameProduct: 'pinus-sembra',
+        positionAmount: 20,
+        sumPrice: 400,
+        priceOne:20,
+        images: '/assets/pinus_cembra2-900x900.jpg',
+        numberItem: 1,
+        isSelected: false,
+    },
+    {
+        nameProduct: 'pinus-nigra',
+        positionAmount: 20,
+        sumPrice: 400,
+        priceOne:20,
+        images: '/assets/Pinus_nigra.jpg',
+        numberItem: 1,
+        isSelected: false,
+    },
+    {
+        nameProduct: 'scopulorum',
+        positionAmount: 20,
+        sumPrice: 400,
+        priceOne:20,
+        images: '/assets/scopulorum3-900x900.jpg',
+        numberItem: 1,
+        isSelected: false,
+    },
+    {
+        nameProduct: 'pinus-nigra-Piramidalis',
+        positionAmount: 20,
+        sumPrice: 400,
+        priceOne:20,
+        images: '/assets/Sosna-chernaya-Piramidalis.jpg',
+        numberItem: 1,
+        isSelected: false,
+    },
+]
+
+
+

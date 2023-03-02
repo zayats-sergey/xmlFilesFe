@@ -1,0 +1,25 @@
+<p>select-page works!</p>
+
+<div class="main-selection">
+    <div class="fixed-selection custom">
+        <!-- <div class="col-md-5 p-lg-5 mx-auto my-5"> -->
+            <!-- <p class="lead fw-normal">Best site for green tree</p> -->
+            <form action=""
+              class="custom-form"
+              [formGroup] = "languageForm"
+              (ngSubmit) = "changeNameOption()"
+            >
+              <select class="btn btn-outline-secondary custom-select"  formControlName = "option">
+                <option [ngValue]="null">Product Availability</option>
+                <option 
+                  *ngFor = "let option of optionSelect" 
+                  [ngValue]="option.nameOption"
+                 
+                  >{{ option.nameOption }}</option>
+              </select>
+              <button  mat-button color="primary" type="submit" class="custom-btn">enter</button>
+            </form>
+        <!-- </div> -->
+    </div>
+</div>
+

@@ -1,0 +1,55 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.body{
+    height: 400vh;
+    box-sizing: border-box;
+}
+
+.header{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 72px;
+    font-family: sans-serif;
+    color: #fff;
+}
+
+.header:hover{
+    color: rgb(210, 145, 145);
+}
+
+.parallax__image{
+    height: 100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.parallax__image:nth-child(1){
+    background-image: url('src/assets/house_1.jpg');
+}
+.parallax__image:nth-child(2){
+    background-image: url('src/assets/house_interier.jpg');
+}
+.parallax__image:nth-child(3){
+    background-image: url('src/assets/house_3.jpg');
+}
+.parallax__image:nth-child(4){
+    background-image: url('src/assets/house_4.jpg');
+}
+
+
+@media (max-width: 1200px){
+    .header{
+        top: 60%;
+        
+    }
+}
+
+

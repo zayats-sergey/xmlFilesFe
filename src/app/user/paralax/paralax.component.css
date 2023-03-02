@@ -1,0 +1,56 @@
+.test{
+ border: 2px solid red;
+ height: 100vh; 
+ /* 100% высота от окна браузера */
+ background-image: url('src/assets/images.jpg');
+ background-attachment: fixed;
+ /* изображение не подвижно и привязано к центру окна браузера */
+background-repeat: no-repeat;
+background-position: center center;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 400vh;
+}
+
+.parallax__image{
+    height: 100vh; 
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.parallax__image:nth-child(1){
+    background-image: url('src/assets/Parallax1.jpg');
+}
+
+.parallax__image:nth-child(2){
+    background-image: url('src/assets/Parallax2.jpg');
+}
+
+.parallax__image:nth-child(3){
+    background-image: url('src/assets/Parallax3.jpg');
+}
+
+.parallax__image:nth-child(4){
+    background-image: url('src/assets/Parallax4.jpg');
+}
+
+.header{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: sans-serif;
+    font-size: 72px;
+    color: #fff;
+
+}
+
+

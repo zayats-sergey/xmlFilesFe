@@ -1,0 +1,76 @@
+
+.bootstrap{
+    box-sizing: border-box;
+    min-height: 728px;
+}
+
+
+.flex-comingSoon{
+    display: flex;
+    width: 100%;
+    /* background-image: url("src/assets/medical-art-more-christmas-tree-gift-new-year-png-favpng-fGZrkajJ2ixvXc9Ar9KRZm4aq.jpg"); */
+}
+
+.select-comingSoon{
+    width: 100%;
+    height: 30px;
+    min-width: 200px;
+}
+
+/* .option-comingSoon{
+    min-width: 300px;
+} */
+
+
+@media (max-width: 992px){
+    .bootstrap{
+        max-width: 960px;
+    }
+    .image-comingSoon {
+        max-width: 720px;
+        background-size: cover;
+    }
+    
+}
+
+@media (max-width: 768px){
+    .bootstrap, .image-comingSoon{
+        max-width: 520px;
+    }
+    .bootstrap{
+        min-height: 728px;
+    }
+    .flex-comingSoon{
+        flex-direction: column;
+    }
+    .image-comingSoon {
+        max-width: 520px;
+    }
+}
+
+@media (max-width: 576px){
+    .bootstrap{
+        max-width: 540px;
+        min-height: 428px;
+    }
+    .flex-comingSoon{
+        flex-direction: column;
+    }
+    .image-comingSoon {
+        max-width: 520px;
+    }
+}
+
+@media (max-width: 380px){
+    .bootstrap{
+        max-width: 300px;
+        min-height: 328px;
+    }
+    .flex-comingSoon{
+        flex-direction: column;
+    }
+    .image-comingSoon {
+        max-width: 300px;
+    }
+}
+

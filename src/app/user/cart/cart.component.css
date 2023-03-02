@@ -1,0 +1,60 @@
+table {
+    width: 100%;
+  }
+  
+  tr.mat-footer-row {
+    font-weight: bold;
+  }
+
+  .SumPriceItem{
+    margin: 0;
+  }
+  .customDellBtnHidden{
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    margin: 0;
+  }
+
+  @media (max-width: 768px){
+    .customIncrement,
+    .customDecrement,
+    .customDelBtn{
+       visibility: hidden;
+    }
+    .custom-table{
+      /* border-collapse: collapse; */
+      word-break: break-word;
+      max-width: 516px;
+      
+    }
+    .customDellBtn_th{
+      padding-right: 0 !important;
+      width: 30px;
+    }
+    .customDellBtn_td{
+      padding-right: 0 !important;
+      width: 30px;
+    }
+
+    .customDellBtn{
+      visibility: hidden;
+      width: 0;
+      height: 0;
+      margin: 0;
+    }
+    .customDellBtnHidden{
+      width: 40px;
+      height: 20px;
+      font-size: 10px;
+      padding: 0;
+      margin: 0;
+      visibility: visible;
+      position: relative;
+      top: -20px;
+    }
+  
+}
+
+
+

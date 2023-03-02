@@ -1,0 +1,28 @@
+<p>order works!</p>
+<h1>Order Products</h1>
+<div class="">
+    <div class="" *ngFor = "let product of products">
+        <form action="" [formGroup] = "profileForm" >
+            <span *ngIf = "product.isSelected !== true" >
+                {{ product.nameProduct }} 
+            </span>
+            <textarea
+                *ngIf = "product.isSelected === true" 
+                formControlName="editedDescription" 
+                rows="1"
+                cols="30"
+                >
+                <!-- {{ product.nameProduct }} -->
+            </textarea>
+        </form>
+            <button  type="submit" *ngIf = "product.isSelected !== true" (click) = "selectedProductType(product)">
+                <img src="{{product.images}}" alt="picture tree" class = "button_img" >
+            </button>
+            <button  type="submit" *ngIf = "product.isSelected === true" (click) = "mergeProduct(product)">
+                <img src="{{product.images}}" alt="picture tree" class = "button_img" >
+            </button>
+    </div>
+</div>
+
+<iframe width="688" height="387" src="https://www.youtube.com/embed/CpPcC9kvsro" title="Тайный лес, шум бесконечного дождя в лесу метасеквойи, дендрарий Янпхён." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<!-- <iframe width="688" height="387" src="/assets/video-b07033461dd6b7c25aae7873224f8ef8-V.mp4" frameborder="0"></iframe> -->

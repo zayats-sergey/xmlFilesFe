@@ -1,0 +1,45 @@
+#content{
+    overflow: visible;
+    text-align: center;
+    font-size: 1.5rem;
+}
+#container{
+    width: 100%;
+}
+
+#square{
+    position: fixed;
+    z-index: -1;
+    top: 0px; 
+    left: 0px;
+    width: 100px;
+    height: 100px;
+    background-color: green;
+}
+
+#rectangle{
+    position: fixed;
+    z-index: -1;
+    bottom: 0px; 
+    left: 50px;
+    width: 200px;
+    height: 100px;
+    background-color: red;
+}
+
+#circle{
+    position: fixed;
+    z-index: -1;
+    bottom: 0px; 
+    right: 0px;
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    /* background-image: url('D:\sergey visual studio\xmlFiles\angularApp\src\assets\81Gok22YbYL._AC_UL1500_.jpg'); */
+    border-radius: 50px;
+}
+
+
+/* p {
+    font-family: Lato;
+  } */

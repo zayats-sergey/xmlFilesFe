@@ -1,0 +1,71 @@
+<p>post-acomment works!</p>
+
+<h1>ARTICLE</h1>
+<div class="article-text">
+    <h1>
+        500+ Words Essay on Tree
+    </h1>
+    
+Tree Essay- Trees are our best friends because they clean the air we breathe. Likewise, they also clean the water and soil and ultimately make the earth a better place. It is also a fact that people who live near trees are healthier, fit, and happier than people who do not.
+
+Moreover, it is our responsibility to look after our friends who serve us in many ways. Most importantly by saving plants, we are not doing any favor to plants but to ourselves only. Because trees and plants life does not depend on us but our lives depend on them.
+</div>
+<!-- <div class="new-post" *ngFor = "let post of postcomment">
+    <form action="" [formGroup] = "profileForm">
+        <input *ngIf = "post.choose !== true" placeholder="{{post.namePost}}">
+        <textarea name="" id="" cols="30" rows="5"
+            *ngIf = "post.choose === true"
+            formControlName="editedDescription" 
+            >
+        </textarea>
+    </form>
+        <button  type = "submit"
+            *ngIf = "post.choose !== true" 
+            (click) = "selectedPostAcomment($event, post)"
+            >false
+        </button>
+        <button  type = "submit"
+            *ngIf = "post.choose === true" 
+            (click) = "mergePostAcomment($event, post)"
+            >true
+        </button>
+</div>  -->
+
+<div class="formGroup3">
+    <form action="" [formGroup] = "jobForm" (ngSubmit)="save()">
+        <textarea placeholder="PHOTO adress (/assets/.....):" class="" formControlName="foto"></textarea>
+        <textarea placeholder="serName:" formControlName="serName"></textarea>
+        <textarea placeholder="POST:" formControlName="post"></textarea>
+        <button type="submit" class="btn btn-primary custom-btn">Add post a comment</button>
+    </form>
+    <!-- <div class="col col-md-4">
+        <div style="position: fixed">{{ preview }}</div>
+    </div > -->
+   
+    <div class="previewFlex" *ngIf = "previewSerName && previewPost ">
+        <div  >
+            <img class="previewPostFoto" src="{{previewFoto1}}" alt="">
+        </div>
+        <div class="previewPost">{{previewSerName}}</div>
+        <div class="previewPost">{{previewPost}}</div>
+    </div>
+
+    <div class="">
+        <button 
+            type="submit" 
+            class="btn btn-primary custom-btn"
+            (click) = "searchAllPosts()"
+            >Search all posts a comments
+        </button>
+    </div>   
+    <div class="">
+        <!-- {{allPosts | json}} -->
+        <div class="previewFlex" *ngFor = "let post of allPosts">
+            <div  >
+                <img class="previewPostFoto" src="{{post.postArr[0]}}" alt="">
+            </div>
+            <div class="previewPost">{{post.postArr[1]}}</div>
+            <div class="previewPost">{{post.postArr[2]}}</div>
+        </div>
+    </div>
+</div>

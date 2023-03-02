@@ -1,0 +1,17 @@
+
+
+.selection-button{
+    background-color: aqua;
+    width: 200px;
+    height: 40px;
+    border-radius: 35px;
+    margin: 2px;
+    text-align: center;
+    padding-top: 2px;
+}
+
+.selection-pre{
+    max-width: 400px;
+    max-height: 200px;
+}
+

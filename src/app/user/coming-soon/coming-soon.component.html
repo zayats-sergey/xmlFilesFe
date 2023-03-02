@@ -1,0 +1,75 @@
+<p>coming-soon works!</p>
+<!-- 
+<div class="bootstrap" *ngFor = "let coming of comingSoonArr">
+    <div class="flex-comingSoon">
+        <div class="form-cominSoon">
+            <form action="" [formGroup] = "profileForm" (ngSubmit) = "selectComingSoon()">
+                <select   name="" id="" formControlName = "editedDescription">
+                    <option [ngValue]="null">Choice comingSoonArr 23</option>
+                    <option  
+                    *ngFor = "let coming of comingSoonArr" 
+                    [ngValue]="coming"
+                    style="background-image:url(/src/assets/medical-art-more-christmas-tree-gift-new-year-png-favpng-fGZrkajJ2ixvXc9Ar9KRZm4aq.jpg) 100% 50% no-repeat;"
+                    > 
+                    {{ coming.nameComingSoon }} 
+                    </option>
+                </select>
+                <button  mat-button color="primary" type="submit">enter</button>
+            </form>
+        </div>
+        <img class = "image-comingSoon" [src]="coming.images" loading="lazy" alt="">
+        <div class="" *ngIf = "coming.nameComingSoon === someProfileFormName" >
+            <img class = "image-comingSoon" [src]=" someProfileFormImage "   [src]=" coming.images" loading="lazy" alt="">
+        </div>
+    </div>
+</div> -->
+
+<div class="bootstrap">
+    <form class = " flex-comingSoon " action="" [formGroup] = "imageForm" (ngSubmit) = "selectSomeProduct()">
+       <div class=" flex-comingSoon">
+        <select class="select-comingSoon" name="" id="" formControlName = "imageDescription">
+            <option [ngValue]="null">Choice comingSoonArr 23</option>
+            <option 
+                *ngFor = "let coming of comingSoonArr" 
+                [ngValue]="coming"
+                >
+                {{coming.nameComingSoon}}
+            </option>
+        </select>
+        <button class="select-comingSoon" mat-button color="primary" type="submit">enter</button>
+       </div>
+        
+        <div class="coming-comingSoon"  *ngFor = "let coming of comingSoonArr">
+            <div class="" *ngIf = "coming.nameComingSoon === someImageFormName" >
+                <img class = "image-comingSoon" [src]=" coming.images" loading="lazy" alt="">
+            </div>
+        </div>
+    </form>
+</div>
+
+
+<div class="bootstrap">
+    <form class = " flex-comingSoon " action="" [formGroup] = "fertilizersForm" (ngSubmit) = "selectFertilizers()">
+       <div class=" flex-comingSoon">
+            <select class="select-comingSoon" name="" id="" formControlName = "fertilizersDescription">
+                <option class = "option-comingSoon" [ngValue]="null">Choice comingSoonArr Fertilizers</option>
+                <option 
+                    class = "option-comingSoon"
+                    *ngFor = "let fertilizer of fertilizersComingSoon" 
+                    [ngValue]="fertilizer"
+                    >
+                    {{fertilizer.nameFertilizers}}
+                </option>
+            </select>
+            <button class="select-comingSoon" mat-button color="primary" type="submit">enter</button>
+       </div>
+        
+        <div class="coming-comingSoon"  *ngFor = "let fertilizer of fertilizersComingSoon">
+            <div class="" *ngIf = "fertilizer.nameFertilizers === fertilizersName" >
+                <img class = "image-comingSoon" [src]=" fertilizer.images" loading="lazy" alt="">
+            </div>
+        </div>
+    </form>
+</div>
+
+

@@ -1,0 +1,70 @@
+<p>home works!</p>
+<main class = "home-main">
+    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+      <!-- <div class="col-md-5 p-lg-5 mx-auto my-5">
+        <p class="lead fw-normal">Best site for green tree</p>
+        <form action=""
+          [formGroup] = "languageForm"
+          (ngSubmit) = "changeNameOption()"
+        >
+          <select class="btn btn-outline-secondary"  formControlName = "option">
+            <option [ngValue]="null">Product Availability</option>
+            <option 
+              *ngFor = "let option of optionSelect" 
+              [ngValue]="option.nameOption"
+             
+              >{{ option.nameOption }}</option>
+          </select>
+          <button  mat-button color="primary" type="submit">enter</button>
+        </form>
+      </div> -->
+      <div class="product-device product-device-2 shadow-sm d-none d-md-block">
+        <img class="main-image" src="\assets\матасеквоя-1.jpg" alt="">
+      </div>
+    </div>
+  
+ <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3 castomArr " >
+     <div class="castomArr0 ">
+      <div class=" text-bg-dark  me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden castomArr1" *ngFor = 'let prod of arr1'>
+        <div class="my-3 p-3">
+          <h2 class="display-5"> 
+            <button mat-button color="primary" (click) = "sendToCart(prod)">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+             <p class="beforeExampl"> to CART</p>
+            </button>
+          </h2>
+          <p class="lead">{{ prod.name }}</p>
+        </div>
+        <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+          <img class="bg-dark shadow-sm mx-auto" style="width: 100%; height: 300px; border-radius: 21px 21px 0 0;" [src]="prod.images" alt=""> 
+        </div>
+      </div>
+     </div>
+     <div class="castomArr0">
+      <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden castomArr1" *ngFor = 'let prod of arr2'>
+        <div class="my-3 py-3">
+          <h2 class="display-5"> 
+            <button mat-button class="secondButton" color="primary" (click) = "sendToCart(prod)">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <p class="beforeExampl beforeExampl1"> to CART</p>
+            </button>
+          </h2>
+          <p class="lead">{{ prod.name }}</p>
+        </div>
+        <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+          <img class="bg-body shadow-sm mx-auto" style="width: 100%; height: 300px; border-radius: 21px 21px 0 0;" [src]="prod.images" alt=""> 
+        </div>
+      </div>
+     </div> 
+  </div>
+
+  </main>
+
+
+ 

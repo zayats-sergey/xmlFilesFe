@@ -1,0 +1,58 @@
+<p>deep-parallax works!</p>
+
+<div class="leftNumderPage">
+    <div class="heightNumberBox">
+      <div class="numberOne" appParallax [ratio]="-0.05">1</div>
+    </div>
+     
+      <div class="numberTwo">2</div>
+      <div class="numberThree">3</div>
+      <div class="numberFor">4</div>
+      <div appParallax [ratio]="-0.05" id="square" ></div>
+</div>
+<div class="parallax" >
+   
+    <img src="\assets\Parallax1.jpg" class = "parallax__background" alt=""  >
+    <!-- <img src="\assets\boat.jpg" class = "parallax__boat" [ngClass] = "someClass" alt="">
+    <img src="\assets\woman.jpg" class = "parallax__woman" alt=""> -->
+
+    <!-- <img src="\assets\Parallax2.jpg" class = "parallax__background" alt=""  >
+    <img src="\assets\Parallax3.jpg" class = "parallax__background" alt=""  >
+    <img src="\assets\Parallax4.jpg" class = "parallax__background" alt=""  > -->
+
+    <!-- <div class="parallax__text">
+        Оренда будинку
+        <br>
+        200 usd
+    </div> -->
+</div>
+<!-- <button (click) = "transform()">TRANSFORM</button> -->
+
+
+<!-- <div class="" style='background-color: rgb(237, 224, 224); width: 400px; height: somePx'>{{somePx}}</div> -->
+
+    <!-- <h1>Hello, you have pressed enter {{someHeight}} number of times!</h1> Press enter key 
+            to increment the counter.
+  <button (click)="resetCounter()" style='height: someHeight' >Reset Counter</button> -->
+
+
+  <!-- <div id="container">
+    <div id="content">
+      <div style="width: 80%; margin-left: auto; margin-right: auto;">
+        Lots of placeholder text here so we ample vertical scroll to play with....
+      </div>
+    </div>
+  </div>  -->
+  
+  <!-- our parallax stuff -->
+  <div class="ratioPage">
+    <!-- <div appParallax [ratio]="-0.05" id="square" ></div> -->
+    <div appParallax [ratio]="0.5" id="circle" ></div>
+
+    <div appParallax [ratio]="1.2" id="circle2"></div>
+    <div appParallax [ratio]="1.7" id="circle3" ></div>
+    
+    <!-- <div appParallax [ratio]="0.9" id="rectangle"></div> -->
+  </div>
+  
+

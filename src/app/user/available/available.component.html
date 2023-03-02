@@ -1,0 +1,22 @@
+<p>available works!</p>
+
+<input type="hidden" #selection>
+<div class="selection-button" (click) = "selection.value = 'Christmas tree decorations'">Christmas tree decorations</div>
+<div class="selection-button" (click) = "selection.value = 'Lamps'">Lamps</div>
+<div class="selection-button" (click) = "selection.value = 'Santa Claus'">Santa Claus</div>
+
+<div class="terminal" [ngSwitch] = selection.value> 
+    <pre   *ngSwitchDefault>available</pre>
+    <pre *ngSwitchCase = "'Christmas tree decorations'">
+        <img class="selection-pre" src="/assets/images Christmas tree decorations.jpg" alt="">
+        Christmas tree decorations
+    </pre>
+    <pre *ngSwitchCase = "'Lamps'">
+        <img class="selection-pre"  src="/assets/how-to-put-lights-on-a-christmas-tree-guide-steps-2000-c946a50fa4b44498a8ad77fd201689cf.jpg" alt="">
+        Lamps
+    </pre>
+    <pre *ngSwitchCase = "'Santa Claus'">
+        <img class="selection-pre" src="/assets/81Gok22YbYL._AC_UL1500_.jpg" alt="">
+     Santa Claus
+    </pre>
+</div>

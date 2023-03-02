@@ -1,0 +1,72 @@
+<h1>cart works!</h1>
+
+<table mat-table [dataSource]="returnProductsArr" class="mat-elevation-z8 custom-table">
+      <!-- Number Column -->
+      <ng-container matColumnDef="number">
+        <th mat-header-cell *matHeaderCellDef> Number </th>
+        <td mat-cell *matCellDef="let returnProductsArr; let i = index"> {{ i + 1 }} </td>
+        <td mat-footer-cell *matFooterCellDef>  </td>
+      </ng-container>
+    <!-- NameProduct Column -->
+    <ng-container matColumnDef="nameProduct">
+      <th mat-header-cell *matHeaderCellDef> NameProduct </th>
+      <td mat-cell *matCellDef="let returnProductsArr"> {{returnProductsArr.nameProduct}} </td>
+      <td mat-footer-cell *matFooterCellDef> Total </td>
+    </ng-container>
+  
+    <!-- PriceOne Column -->
+    <ng-container matColumnDef="priceOne">
+      <th mat-header-cell *matHeaderCellDef> PriceOne </th>
+      <td mat-cell *matCellDef="let returnProductsArr"> {{returnProductsArr.priceOne | currency}} </td>
+      <!-- <td mat-footer-cell *matFooterCellDef> {{getTotalCost() | currency}} </td> -->
+      <td mat-footer-cell *matFooterCellDef> </td>
+    </ng-container>
+
+    <!-- Increment Column -->
+    <ng-container matColumnDef="increment">
+      <th mat-header-cell *matHeaderCellDef class="customIncrement"> Increment </th>
+      <td mat-cell *matCellDef="let returnProductsArr">  
+        <button mat-raised-button class="custom-btn" color="primary" (click) = "increment(returnProductsArr.nameProduct)">+</button> 
+      </td>
+      <td mat-footer-cell *matFooterCellDef>  </td>
+    </ng-container>
+
+    <!-- NumberItem Column -->
+      <ng-container matColumnDef="numberItem">
+        <th mat-header-cell *matHeaderCellDef > NumberItem </th>
+        <td mat-cell *matCellDef="let returnProductsArr"> {{returnProductsArr.numberItem}} </td>
+        <td mat-footer-cell *matFooterCellDef>  </td>
+      </ng-container>
+
+    <!-- Decrement Column -->
+    <ng-container matColumnDef="decrement">
+      <th mat-header-cell *matHeaderCellDef class="customDecrement"> Decrement </th>
+      <td mat-cell *matCellDef="let returnProductsArr">  
+        <button mat-raised-button color="primary" (click) = "decrement(returnProductsArr.nameProduct)">-</button> 
+      </td>
+      <td mat-footer-cell *matFooterCellDef>  </td>
+    </ng-container>   
+
+       <!-- SumPriceItem Column -->
+    <ng-container matColumnDef="sumPriceItem">
+      <th mat-header-cell *matHeaderCellDef> <p class="SumPriceItem">SumPriceItem</p>  </th>
+      <td mat-cell *matCellDef="let returnProductsArr"> {{returnProductsArr.sumPriceItem | currency}} </td>
+      <td mat-footer-cell *matFooterCellDef> {{getTotalCostAllSumPriceItem() | currency}} </td>
+    </ng-container>
+
+    <!-- DellButton Column -->
+    <ng-container matColumnDef="dellButton">
+        <th mat-header-cell *matHeaderCellDef class="customDelBtn" class = "customDellBtn_th"> DellButton </th>
+        <td mat-cell *matCellDef="let returnProductsArr" class = "customDellBtn_td"> 
+            <button mat-button color="warn" (click) = "dellProduct(returnProductsArr.nameProduct)"> <p class = "customDellBtn">Delete Product</p> </button>
+            <button mat-button color="warn" (click) = "dellProduct(returnProductsArr.nameProduct)"> <p class = "customDellBtnHidden">Del Prod</p> </button>
+        </td>
+        <td mat-footer-cell *matFooterCellDef>  </td>
+    </ng-container>
+  
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    <tr mat-footer-row *matFooterRowDef="displayedColumns"></tr>
+  </table>
+
+  <button mat-button color="warn" (click) = "sendToDashBoard()">Send To DashBoard Product</button>  

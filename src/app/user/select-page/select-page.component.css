@@ -1,0 +1,44 @@
+
+.main-selection{
+   
+    position: relative;
+    background-color: aqua;
+    z-index: 22;
+    margin: 0;
+}
+
+.fixed-selection{
+    height: 100px;
+    width: 100%;
+    /* font-size: 72px; */
+    font-family: sans-serif;
+    color: rgb(181, 136, 136);
+    
+}
+
+.custom{
+    min-height: 10em;
+    display: table-cell;
+    vertical-align: middle ;
+}
+
+.custom-form{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 768px){
+    .custom-select{
+        width: 300px;
+        margin: 0 auto;
+    }
+    .custom-btn{
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -0%);
+    }
+}
+
+

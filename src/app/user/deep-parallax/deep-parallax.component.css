@@ -1,0 +1,150 @@
+.parallax{
+    position: relative;
+}
+
+.parallax__background{
+    display: block;
+    width: 100%;
+}
+
+.parallax__boat{
+    position: absolute;
+    width: 25%;
+    bottom: 60px;
+    right: -200px;
+}
+
+.parallax__boat1{
+    position: absolute;
+    width: 25%;
+    bottom: 60px;
+    right: -200px;
+    transform: translateX(-100px);
+    transition: ease-in-out 2s;
+}
+
+/* .parallax__woman{
+    position: absolute;
+    width: 40%;
+    bottom: 340px;
+} */
+
+/* .parallax__text{
+    position: absolute;
+    width: 100%;
+    top: -200px;
+    font-family: sens-serif;
+    font-size: 72px;
+    text-align: center;
+    color: red;
+} */
+
+
+
+#content{
+    overflow: visible;
+    text-align: center;
+    font-size: 1.5rem;
+}
+#container{
+    width: 100%;
+}
+
+#square{
+    position: fixed;
+    z-index: 2;
+    top: 0px; 
+    left: 0px;
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    /* background-image: url('/assets/christmas-snow-new-year-tree-lights-wallpaper-preview.jpg'); */
+    /* background-size: cover; */
+    margin-top: 175px;
+}
+
+#rectangle{
+    position: fixed;
+    z-index: -1;
+    bottom: 0px; 
+    left: 50px;
+    width: 200px;
+    height: 100px;
+    background-color: red;
+}
+
+#circle{
+    width: 100%;
+    height: 130vh;
+    position: relative;
+    z-index: 30;
+    /* bottom: 0px !important;  */
+    right: 0px;
+    background-color: yellow;
+    background-image: url('/assets/house_1.jpg');
+    background-size: cover;
+    margin-bottom: 1000px;
+}
+
+#circle2{
+    width: 100%;
+    height: 130vh;
+    position: relative;
+    z-index: 31;
+    bottom: 0px;
+    right: 0px;
+    background-color: yellow;
+    background-image: url('/assets/house_3.jpg');
+    background-size: cover;
+    margin-bottom: 1000px;
+}
+
+#circle3{
+    height: 130vh;
+    position: relative;
+    z-index: 32;
+    bottom: 0px; 
+    right: 0px;
+    background-color: yellow;
+    background-image: url('/assets/house_4.jpg');
+    background-size: cover;
+}
+
+.ratioPage{
+    height: 200vh;
+    position: relative;
+}
+
+.leftNumderPage{
+    position: absolute;
+    z-index: -2;
+    top: 0px; 
+    left: 0px;
+    width: 100px;
+    height: 330vh;
+    background-color: rgb(204, 168, 168);
+    margin-top: 174px;
+}
+.numberOne{
+    position: fixed;
+    z-index: 3;
+    left: 0px;
+    width: 100px;
+    height: 100px;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    padding: 35px;
+    margin-top: 174px;
+    /* visibility:visible; */
+}
+
+.heightNumberBox{
+    position: relative;
+    height: 1000px !important;
+    background-color: aqua;
+    overflow:hidden !important;
+    
+}
+
+
