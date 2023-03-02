@@ -34,7 +34,8 @@
 .parallax__image:nth-child(1){
     /* background-image: url('src/assets/house_1.jpg'); */
      /* background-image: url('D:/sergey visual studio/xmlFiles/xmlFilesFE/src/assets/house_1.jpg') */
-     background-image: url('https://zayats-sergey.github.io/xmlFilesFe/docs/assets/house_1.jpg')
+     /* background-image: url('https://zayats-sergey.github.io/xmlFilesFe/docs/assets/house_1.jpg') */
+     background-image: url('https://zayats-sergey.github.io/xmlFilesFe/assets/house_1.jpg')
      /* background-image: url('https://github.com/zayats-sergey/xmlFilesFe/blob/master/docs/assets/house_1.jpg') */
 }
 .parallax__image:nth-child(2){
