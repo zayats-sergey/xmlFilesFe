@@ -57,8 +57,6 @@ const routes: Routes = [
   },
   {path: '',  redirectTo: 'header', pathMatch: 'full'},
  
-
-
   // {path:'home', component: HomeComponent, outlet: "outletUserAuth"},
   // {path: 'reg', component: RegComponent, outlet: "outletUserAuth"},
   // {path: 'auth', component: AuthComponent, outlet: "outletUserAuth"},

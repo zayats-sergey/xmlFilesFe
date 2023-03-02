@@ -27,7 +27,7 @@
     <button *ngIf = "authService.isLoggedIn()"  class = " btn btn-outline-primary me-3" [routerLink] = "[{outlets: {outletUserAuth: 'dashboard'}}]">Dashboard</button>
     <button *ngIf = "!authService.isLoggedIn()"  class = " btn btn-outline-primary me-3" [routerLink] = "[{outlets: {outletUserAuth: 'cart'}}]" >CART</button> -->
 
-    <button *ngIf = "!authService.isLoggedIn()" class = " btn btn-outline-primary me-3" [routerLink] = "['reg']" >Регистрация</button>
+    <button *ngIf = "!authService.isLoggedIn()" class = " btn btn-outline-primary me-3" [routerLink] = "['reg']" [state]="{tracingId: 123}">Регистрация</button>
     <button *ngIf = "!authService.isLoggedIn()"  class = " btn btn-outline-primary me-3" [routerLink] = "['auth']">Войти</button>
     <button *ngIf = "authService.isLoggedIn()"  class = " btn btn-outline-primary me-3" [routerLink] = "['dashboard']">Dashboard</button>
     <button *ngIf = "!authService.isLoggedIn()"  class = " btn btn-outline-primary me-3 btn-numberItemSum" [routerLink] = "['cart']" >
@@ -36,6 +36,7 @@
         CART
       </span>  -->
       <!-- <img class = "cart-image" src="\assets\Cart (0).jpg" alt=""> -->
+      <source type="image/webp" srcset="https://zayats-sergey.github.io/xmlFilesFe/assets/Cart (0).webp" />
       <img class = "cart-image" src="https://zayats-sergey.github.io/xmlFilesFe/assets/Cart (0).jpg" alt="">
       <span class = "numberItemSum">
          {{ numberItemSum }}
